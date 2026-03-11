@@ -435,7 +435,7 @@ function Navbar() {
                 <a href="#About" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none", fontFamily: "DM Sans", letterSpacing: "0.02em", transition: "color 0.2s" }} onMouseEnter={e => e.target.style.color = "#fff"} onMouseLeave={e => e.target.style.color = "rgba(255,255,255,0.55)"}>About</a>
 
             </div>
-            <button className="btn-primary nav-cta-desktop" style={{ padding: "10px 24px", fontSize: 13 }}>Apply to Pitch →</button>
+            <a className="btn-primary nav-cta-desktop" href="#ApplyToPitch" style={{ padding: "10px 24px", fontSize: 13,textDecoration:"None" }}>Apply to Pitch →</a>
             <button onClick={() => setOpen(!open)} className="nav-hamburger" style={{ background: "none", border: "1px solid rgba(255,255,255,0.15)", borderRadius: 8, padding: "8px 10px", cursor: "pointer", flexDirection: "column", gap: 4, zIndex: 2 }}>
                 {[0, 1, 2].map(i => <div key={i} style={{ width: 18, height: 1.5, background: "#fff", borderRadius: 1, transition: "all .3s", transform: open ? (i === 0 ? "rotate(45deg) translate(4px,4px)" : i === 2 ? "rotate(-45deg) translate(4px,-4px)" : "scaleX(0)") : "none" }} />)}
             </button>
@@ -470,7 +470,7 @@ function Hero() {
                         Karo Pitch connects early-stage founders from Tier-2 and Tier-3 cities across India directly with investors — making startup funding accessible to every builder in Bharat.
                     </p>
                     <div style={{ display: "flex", gap: 14, flexWrap: "wrap", animation: "fadeUp .9s 300ms both" }}>
-                        <button className="btn-primary">Apply to Pitch →</button>
+                        <a className="btn-primary" href="#ApplyToPitch" style={{textDecoration:"None"}}>Apply to Pitch →</a>
                         <a className="btn-ghost" href="#Startups" style={{textDecoration:"None"}}>Explore Startups</a>
                     </div>
                     <div style={{ display: "flex", gap: "clamp(24px,4vw,48px)", marginTop: 72, paddingTop: 40, borderTop: "1px solid rgba(255,255,255,0.07)", flexWrap: "wrap", animation: "fadeUp .9s 400ms both" }}>
@@ -696,7 +696,7 @@ function PoweredBy() {
 /* ─── CTA ─────────────────────────────────────────────── */
 function CTA() {
     return (
-        <section className="sec-pad" style={{ position: "relative", zIndex: 2 }}>
+        <section className="sec-pad" id="ApplyToPitch" style={{ position: "relative", zIndex: 2 }}>
             <div className="inner-wrap">
                 <Reveal>
                     <div style={{ background: "linear-gradient(135deg,rgba(255,255,255,0.04) 0%,rgba(255,255,255,0.02) 100%)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 32, padding: "clamp(48px,8vw,100px) clamp(24px,6vw,80px)", textAlign: "center", position: "relative", overflow: "hidden" }}>
