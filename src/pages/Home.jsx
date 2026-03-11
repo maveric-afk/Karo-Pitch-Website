@@ -464,7 +464,7 @@ function Hero() {
                 <div style={{ maxWidth: 680 }}>
                     <div className="tag" style={{ animation: "fadeUp .8s both" }}>India's Startup Pitch Platform</div>
                     <h1 className="syne" style={{ fontSize: "clamp(40px,8vw,88px)", fontWeight: 800, lineHeight: 1.0, letterSpacing: "-0.03em", marginBottom: 28, animation: "fadeUp .9s 100ms both" }}>
-                        Pitch Your<br /><span className="shimmer-text">Startup</span><br />to Investors
+                        Pitch Your<br /><span className="shimmer-text">Startup</span><br />to India's Top Investors
                     </h1>
                     <p style={{ fontSize: "clamp(14px,1.6vw,18px)", color: "rgba(255,255,255,0.45)", lineHeight: 1.7, maxWidth: 480, marginBottom: 44, animation: "fadeUp .9s 200ms both" }}>
                         Karo Pitch connects early-stage founders from Tier-2 and Tier-3 cities across India directly with investors — making startup funding accessible to every builder in Bharat.
